@@ -27,6 +27,7 @@ exports.LoginPage = (req, res) => {
 
 exports.SignupPage = async (req, res) => {
   try {
+   
     let { fullname, email, password, country } = req.body;
     let sql = `INSERT INTO clint( fullname, email, password,country)
         VALUES ('${fullname}','${email}','${password}','${country}')`;
